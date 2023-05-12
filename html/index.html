@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="../css/master.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/images/logo.jpg" />
+      </div>
+
+      <div class="switch">
+        <div class="arabic"><a href="#" id="arabic-link">Arabic</a></div>
+        <div class="english">
+          <a href="#" id="english-link" onClick="window.location.reload(true)"
+            >English</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="translate">
+        <h1>Get A Quick, Free Translation</h1>
+
+        <div class="get-input">
+          <ul class="from">
+            <div class="any-lang">From any language</div>
+          </ul>
+
+          <form action="">
+            <input type="text" id="input-text" />
+            <input type="submit" value="Translate" id="translate-btn" />
+          </form>
+
+          <ul class="to">
+            <div class="word">To</div>
+            <li><a href="#" class="english" id="select-en">English</a></li>
+            <li><a href="#" class="arabic" id="select-ar">Arabic</a></li>
+          </ul>
+        </div>
+
+        <p class="result" id="result"></p>
+      </div>
+
+      <div class="main-img">
+        <img src="../assets/images/main-img.png" alt="main-img" />
+      </div>
+    </div>
+  </body>
+  <!-- js -->
+  <script src="../js/main.js"></script>
+</html>
